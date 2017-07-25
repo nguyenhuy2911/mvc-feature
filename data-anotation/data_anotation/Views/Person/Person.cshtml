@@ -1,0 +1,120 @@
+﻿@model data_anotation.Models.Person
+
+@{
+    ViewBag.Title = "Person";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Person</h2>
+
+<form id="frm-crud-person">
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Person</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name)
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DateOfBirth, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DateOfBirth)
+                @Html.ValidationMessageFor(model => model.DateOfBirth)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Address, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Address)
+                @Html.ValidationMessageFor(model => model.Address)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.IdentityCard, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.IdentityCard)
+                @Html.ValidationMessageFor(model => model.IdentityCard)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Sex, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Sex)
+                @Html.ValidationMessageFor(model => model.Sex)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PhoneNumber, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PhoneNumber)
+                @Html.ValidationMessageFor(model => model.PhoneNumber)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+<input type="button" id="btn-external-submit" value="External submit" class="btn btn-default" />
+<div class="div-loading" style="display:none">
+    Loadding .................
+</div>
+<script>
+    $("#frm-crud-person").submit(function (e) {
+        var isvalidate = $(this).valid();
+        if (!isvalidate) {
+            return;
+        }
+        var data = $(this).serialize();
+        $.ajax({
+            type: 'GET', // define the type of HTTP verb we want to use (POST for our form)
+            url: '/Person/Create', // the url where we want to POST
+            //   data: data, // our data object
+            dataType: 'json', // what type of data do we expect back from the server
+            encode: true,
+            contentType: 'application/json; charset=utf-8',
+            beforeSend: function () {
+                $('.div-loading').show();
+            },
+            error: function (respone) {
+                $('.div-loading').hide();
+                console.log(respone);
+            },
+            success: function (response) {
+                $('.div-loading').hide();
+                console.log(response);
+            }
+        })
+
+        .done(function (response) {
+            console.log(response);
+
+        });
+        e.preventDefault(); //STOP default action
+
+    });
+    $("#btn-external-submit").on("click", function () {
+        $("#frm-crud-person").submit();
+    });
+
+
+
+</script>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

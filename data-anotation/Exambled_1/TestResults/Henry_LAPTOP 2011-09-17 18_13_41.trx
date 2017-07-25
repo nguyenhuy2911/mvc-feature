@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="0a024469-9c6f-4752-bbe3-ea435ffc7028" name="Henry@LAPTOP 2011-09-17 18:13:41" runUser="Laptop\Henry" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="7b357b4f-5b08-4853-bad8-061102816a60">
+    <Deployment runDeploymentRoot="Henry_LAPTOP 2011-09-17 18_13_41">
+      <DeploymentItem filename="C:\Users\Henry\Documents\Visual Studio 2010\Projects\DataAnnotationsValidation\Demo.Models\bin\Debug\Demo.Models.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-09-17T18:13:41.3380379-04:00" queuing="2011-09-17T18:13:44.8482386-04:00" start="2011-09-17T18:13:45.5212771-04:00" finish="2011-09-17T18:13:49.4215002-04:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="4" executed="4" passed="4" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ValidateCustomer_Customer_CustomerIDRequiredError" storage="c:\users\henry\documents\visual studio 2010\projects\dataannotationsvalidation\demo.tests\bin\debug\demo.tests.dll" id="24f41e25-93d1-b0d7-9fbc-0d2eafc84ef9">
+      <Execution id="2a24d190-64d4-413b-a157-dca21ca3a04d" />
+      <TestMethod codeBase="C:/Users/Henry/Documents/Visual Studio 2010/Projects/DataAnnotationsValidation/Demo.Tests/bin/Debug/Demo.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Demo.Tests.ValidationTest, Demo.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ValidateCustomer_Customer_CustomerIDRequiredError" />
+    </UnitTest>
+    <UnitTest name="ValidateCustomer_Customer_NoError" storage="c:\users\henry\documents\visual studio 2010\projects\dataannotationsvalidation\demo.tests\bin\debug\demo.tests.dll" id="9810968a-d80b-ba2e-02d6-c8f25a276f3b">
+      <Execution id="2b31805f-c9a6-447b-94f4-b158b6c769d9" />
+      <TestMethod codeBase="C:/Users/Henry/Documents/Visual Studio 2010/Projects/DataAnnotationsValidation/Demo.Tests/bin/Debug/Demo.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Demo.Tests.ValidationTest, Demo.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ValidateCustomer_Customer_NoError" />
+    </UnitTest>
+    <UnitTest name="ValidateCustomer_Customer_CountryError" storage="c:\users\henry\documents\visual studio 2010\projects\dataannotationsvalidation\demo.tests\bin\debug\demo.tests.dll" id="0607ce21-e50c-6c43-84f5-fbf733970439">
+      <Execution id="94bebb82-550d-49a4-9599-5dc38cf5e6fa" />
+      <TestMethod codeBase="C:/Users/Henry/Documents/Visual Studio 2010/Projects/DataAnnotationsValidation/Demo.Tests/bin/Debug/Demo.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Demo.Tests.ValidationTest, Demo.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ValidateCustomer_Customer_CountryError" />
+    </UnitTest>
+    <UnitTest name="ValidateCustomer_Customer_PhoneNumberError" storage="c:\users\henry\documents\visual studio 2010\projects\dataannotationsvalidation\demo.tests\bin\debug\demo.tests.dll" id="dcb71123-eaba-1805-1fc1-441b9257e5f9">
+      <Execution id="83bc4cbe-cf6e-42a2-aaba-8f898b5bd6d7" />
+      <TestMethod codeBase="C:/Users/Henry/Documents/Visual Studio 2010/Projects/DataAnnotationsValidation/Demo.Tests/bin/Debug/Demo.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Demo.Tests.ValidationTest, Demo.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ValidateCustomer_Customer_PhoneNumberError" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0607ce21-e50c-6c43-84f5-fbf733970439" executionId="94bebb82-550d-49a4-9599-5dc38cf5e6fa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="24f41e25-93d1-b0d7-9fbc-0d2eafc84ef9" executionId="2a24d190-64d4-413b-a157-dca21ca3a04d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9810968a-d80b-ba2e-02d6-c8f25a276f3b" executionId="2b31805f-c9a6-447b-94f4-b158b6c769d9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dcb71123-eaba-1805-1fc1-441b9257e5f9" executionId="83bc4cbe-cf6e-42a2-aaba-8f898b5bd6d7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="94bebb82-550d-49a4-9599-5dc38cf5e6fa" testId="0607ce21-e50c-6c43-84f5-fbf733970439" testName="ValidateCustomer_Customer_CountryError" computerName="LAPTOP" duration="00:00:00.1282876" startTime="2011-09-17T18:13:45.6822864-04:00" endTime="2011-09-17T18:13:48.2934357-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="94bebb82-550d-49a4-9599-5dc38cf5e6fa">
+    </UnitTestResult>
+    <UnitTestResult executionId="2a24d190-64d4-413b-a157-dca21ca3a04d" testId="24f41e25-93d1-b0d7-9fbc-0d2eafc84ef9" testName="ValidateCustomer_Customer_CustomerIDRequiredError" computerName="LAPTOP" duration="00:00:00.0372159" startTime="2011-09-17T18:13:48.3704401-04:00" endTime="2011-09-17T18:13:48.4914470-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2a24d190-64d4-413b-a157-dca21ca3a04d">
+    </UnitTestResult>
+    <UnitTestResult executionId="2b31805f-c9a6-447b-94f4-b158b6c769d9" testId="9810968a-d80b-ba2e-02d6-c8f25a276f3b" testName="ValidateCustomer_Customer_NoError" computerName="LAPTOP" duration="00:00:00.0011684" startTime="2011-09-17T18:13:48.5144483-04:00" endTime="2011-09-17T18:13:48.5534506-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2b31805f-c9a6-447b-94f4-b158b6c769d9">
+    </UnitTestResult>
+    <UnitTestResult executionId="83bc4cbe-cf6e-42a2-aaba-8f898b5bd6d7" testId="dcb71123-eaba-1805-1fc1-441b9257e5f9" testName="ValidateCustomer_Customer_PhoneNumberError" computerName="LAPTOP" duration="00:00:00.0043213" startTime="2011-09-17T18:13:48.6704573-04:00" endTime="2011-09-17T18:13:48.7714630-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="83bc4cbe-cf6e-42a2-aaba-8f898b5bd6d7">
+    </UnitTestResult>
+  </Results>
+</TestRun>
